@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>GTM.GHIElectronics.CerbotController</name>
+    </assembly>
+    <members>
+        <member name="T:Gadgeteer.Modules.GHIElectronics.CerbotController">
+            <summary>
+            A CerbotController module for Microsoft .NET Gadgeteer
+            </summary>
+        </member>
+        <member name="M:Gadgeteer.Modules.GHIElectronics.CerbotController.#ctor(System.Int32,System.Int32)">
+            <summary></summary>
+            <param name="socketNumber">The socket that this module is plugged in to.</param>
+            <param name="socketNumberTwo">The second socket that this module is plugged in to.</param>
+        </member>
+        <member name="M:Gadgeteer.Modules.GHIElectronics.CerbotController.OnButtonEvent(Gadgeteer.Modules.GHIElectronics.CerbotController,Gadgeteer.Modules.GHIElectronics.CerbotController.ButtonState)">
+            <summary>
+            Raises the <see cref="E:Gadgeteer.Modules.GHIElectronics.CerbotController.ButtonPressed"/> or <see cref="E:Gadgeteer.Modules.GHIElectronics.CerbotController.ButtonReleased"/> event.
+            </summary>
+            <param name="sender">The <see cref="T:Gadgeteer.Modules.GHIElectronics.CerbotController"/> that raised the event.</param>
+            <param name="buttonState">The state of the button.</param>
+        </member>
+        <member name="P:Gadgeteer.Modules.GHIElectronics.CerbotController.IsPressed">
+            <summary>
+            Gets a value that indicates whether the button of the CerbotController is pressed.
+            </summary>
+        </member>
+        <member name="E:Gadgeteer.Modules.GHIElectronics.CerbotController.ButtonPressed">
+            <summary>
+            Raised when the button of the <see cref="T:Gadgeteer.Modules.GHIElectronics.CerbotController"/> is pressed.
+            </summary>
+            <remarks>
+            Implement this event handler and/or the <see cref="E:Gadgeteer.Modules.GHIElectronics.CerbotController.ButtonReleased"/> event handler
+            when you want to provide an action associated with button events.
+            Since the state of the button is passed to the <see cref="T:Gadgeteer.Modules.GHIElectronics.CerbotController.ButtonEventHandler"/> delegate,
+            so you can use the same event handler for both button states.
+            </remarks>
+        </member>
+        <member name="E:Gadgeteer.Modules.GHIElectronics.CerbotController.ButtonReleased">
+            <summary>
+            Raised when the button of the <see cref="T:Gadgeteer.Modules.GHIElectronics.CerbotController"/> is released.
+            </summary>
+            <remarks>
+            Implement this event handler and/or the <see cref="E:Gadgeteer.Modules.GHIElectronics.CerbotController.ButtonPressed"/> event handler
+            when you want to provide an action associated with button events.
+            Since the state of the button is passed to the <see cref="T:Gadgeteer.Modules.GHIElectronics.CerbotController.ButtonEventHandler"/> delegate,
+            you can use the same event handler for both button states.
+            </remarks>
+        </member>
+        <member name="T:Gadgeteer.Modules.GHIElectronics.CerbotController.ButtonState">
+            <summary>
+            Represents the state of button of the <see cref="T:Gadgeteer.Modules.GHIElectronics.CerbotController"/>.
+            </summary>
+        </member>
+        <member name="F:Gadgeteer.Modules.GHIElectronics.CerbotController.ButtonState.Released">
+            <summary>
+            The button is released.
+            </summary>
+        </member>
+        <member name="F:Gadgeteer.Modules.GHIElectronics.CerbotController.ButtonState.Pressed">
+            <summary>
+            The button is pressed.
+            </summary>
+        </member>
+        <member name="T:Gadgeteer.Modules.GHIElectronics.CerbotController.ButtonEventHandler">
+            <summary>
+            Represents the delegate that is used to handle the <see cref="E:Gadgeteer.Modules.GHIElectronics.CerbotController.ButtonPressed"/>
+            and <see cref="E:Gadgeteer.Modules.GHIElectronics.CerbotController.ButtonReleased"/> events.
+            </summary>
+            <param name="sender">The <see cref="T:Gadgeteer.Modules.GHIElectronics.CerbotController"/> object that raised the event.</param>
+            <param name="state">The state of the button of the <see cref="T:Gadgeteer.Modules.GHIElectronics.CerbotController"/></param>
+        </member>
+    </members>
+</doc>
