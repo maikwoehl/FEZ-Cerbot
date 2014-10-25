@@ -17,6 +17,6 @@ Usage
 After you installed the files above and created a new FEZCerbot-Project, you can simply use FEZCerbot the same as other FEZ-Mainboards. 
 For example, type the following to turn on the Debug-LED:
 
-```C#
+```csharp
 Mainboard.SetDebugLed(true);
 ```
